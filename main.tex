@@ -95,23 +95,22 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Modelo Canônico de\\ Trabalho Acadêmico com \abnTeX}
-\autor{Equipe \abnTeX}
+\titulo{Enriquecimento de contexto com análise semântica para assistente virtual pessoal}
+\autor{Frederico Costa Galvão \\ Lucas Costa Sousa Milhomem}
 \local{Brasil}
-\data{2014, v-1.9.2}
-\orientador{Lauro César Araujo}
-\coorientador{Equipe \abnTeX}
+\data{2018}
+\orientador{Marcelo Stehling de Castro}
+\coorientador{Sandrerley Ramos Pires}
 \instituicao{%
-  Universidade do Brasil -- UBr
+  Universidade Federal de Goiás - UFG
   \par
-  Faculdade de Arquitetura da Informação
+  Escola de Engenharia Elétrica, Mecânica e de Computação
   \par
-  Programa de Pós-Graduação}
-\tipotrabalho{Tese (Doutorado)}
+  Bacharelado em Engenharia de Computação}
+\tipotrabalho{Projeto Final 2}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Modelo canônico de trabalho monográfico acadêmico em conformidade com
-as normas ABNT apresentado à comunidade de usuários \LaTeX.}
+\preambulo{Projeto Final 2 em defesa de graduação do curso de Engenharia de Computação pela Universidade Federal de Goiás - UFG.}
 % ---
 
 
@@ -215,6 +214,7 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
 	\imprimirdata.}\\
 	
+	%%TODO verificar com o Professor se precisa de algo específico aqui.
 	\hspace{0.5cm}
 		1. Palavra-chave1.
 		2. Palavra-chave2.
@@ -231,6 +231,7 @@ as normas ABNT apresentado à comunidade de usuários \LaTeX.}
 \end{fichacatalografica}
 % ---
 
+%%%TODO se não tiver nada pra fazer errata, remover essa seção
 % ---
 % Inserir errata
 % ---
@@ -260,6 +261,7 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
 \end{errata}
 % ---
 
+%%%TODO remover essa parte para a versão final, e readicionar quando for aprovado
 % ---
 % Inserir folha de aprovação
 % ---
@@ -289,7 +291,7 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
     \vspace*{\fill}
    \end{center}
         
-   Trabalho aprovado. \imprimirlocal, 24 de novembro de 2012:
+   Trabalho aprovado. \imprimirlocal, XX de dezembro de 2018:
 
    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
    \assinatura{\textbf{Professor} \\ Convidado 1}
@@ -308,6 +310,7 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
 \end{folhadeaprovacao}
 % ---
 
+%%%TODO revisar dedicatória com o Lucas
 % ---
 % Dedicatória
 % ---
@@ -315,11 +318,11 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
    \vspace*{\fill}
    \centering
    \noindent
-   \textit{ Este trabalho é dedicado às crianças adultas que,\\
-   quando pequenas, sonharam em se tornar cientistas.} \vspace*{\fill}
+   \textit{ Este trabalho é dedicado aos professores do curso de Engenharia de Computação que souberam manter sempre ativos em nós o interesse e a curiosidade do aprendizado constante. } \vspace*{\fill}
 \end{dedicatoria}
 % ---
 
+%%%TODO redigir agradecimentos com o Lucas
 % ---
 % Agradecimentos
 % ---
@@ -350,11 +353,8 @@ contribuirão para a evolução do \abnTeX.
 \begin{epigrafe}
     \vspace*{\fill}
 	\begin{flushright}
-		\textit{``Não vos amoldeis às estruturas deste mundo, \\
-		mas transformai-vos pela renovação da mente, \\
-		a fim de distinguir qual é a vontade de Deus: \\
-		o que é bom, o que Lhe é agradável, o que é perfeito.\\
-		(Bíblia Sagrada, Romanos 12, 2)}
+		\textit{``A verdade raramente é pura, e nunca é simples. \\
+		Defender cegamente um ponto de vista é papel dos tolos. }
 	\end{flushright}
 \end{epigrafe}
 % ---
@@ -366,15 +366,9 @@ contribuirão para a evolução do \abnTeX.
 % resumo em português
 \setlength{\absparsep}{18pt} % ajusta o espaçamento dos parágrafos do resumo
 \begin{resumo}
- Segundo a \citeonline[3.1-3.2]{NBR6028:2003}, o resumo deve ressaltar o
- objetivo, o método, os resultados e as conclusões do documento. A ordem e a extensão
- destes itens dependem do tipo de resumo (informativo ou indicativo) e do
- tratamento que cada item recebe no documento original. O resumo deve ser
- precedido da referência do documento, com exceção do resumo inserido no
- próprio documento. (\ldots) As palavras-chave devem figurar logo abaixo do
- resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
- ponto e finalizadas também por ponto.
+ Nos últimos anos o consumo de conteúdo virtual aumentou significativamente, entretanto este ainda não está estruturado de maneira preparada para a dimensão prevista pelos projetos de cidades inteligentes em planejamento. A reorganização da internet pelos conceitos da semântica que levará a web ao patamar de Web 3.0 (Web Semântica) está sendo colocada em prática pela Internet das Coisas e por abordagens modernas de processamento de dados, porém a tecnologia necessária para atender as demandas estipuladas ainda se encontra desafiada. Propõe-se, portanto, pesquisa e desenvolvimento de um sistema de mapeamento e gerência de informações pessoais baseado em análise semântica de conteúdo já consumido via extensões de browsers e aplicativos móveis com o objetivo de desenvolver um assistente virtual pessoal de memória e de consumo de conteúdo.
 
+%%%TODO continuar daqui
  \textbf{Palavras-chaves}: latex. abntex. editoração de texto.
 \end{resumo}
 
