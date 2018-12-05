@@ -182,87 +182,6 @@
 % ---
 
 % ---
-% Inserir a ficha bibliografica
-% ---
-
-% Isto é um exemplo de Ficha Catalográfica, ou ``Dados internacionais de
-% catalogação-na-publicação''. Você pode utilizar este modelo como referência. 
-% Porém, provavelmente a biblioteca da sua universidade lhe fornecerá um PDF
-% com a ficha catalográfica definitiva após a defesa do trabalho. Quando estiver
-% com o documento, salve-o como PDF no diretório do seu projeto e substitua todo
-% o conteúdo de implementação deste arquivo pelo comando abaixo:
-%
-% \begin{fichacatalografica}
-%     \includepdf{fig_ficha_catalografica.pdf}
-% \end{fichacatalografica}
-\begin{fichacatalografica}
-	\vspace*{\fill}					% Posição vertical
-	\hrule							% Linha horizontal
-	\begin{center}					% Minipage Centralizado
-	\begin{minipage}[c]{12.5cm}		% Largura
-	
-	\imprimirautor
-	
-	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
-	\imprimirlocal, \imprimirdata-
-	
-	\hspace{0.5cm} \pageref{LastPage} p. : il. (algumas color.) ; 30 cm.\\
-	
-	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
-	
-	\hspace{0.5cm}
-	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
-	\imprimirdata.}\\
-	
-	%%TODO verificar com o Professor se precisa de algo específico aqui.
-	\hspace{0.5cm}
-		1. Palavra-chave1.
-		2. Palavra-chave2.
-		I. Orientador.
-		II. Universidade xxx.
-		III. Faculdade de xxx.
-		IV. Título\\ 			
-	
-	\hspace{8.75cm} CDU 02:141:005.7\\
-	
-	\end{minipage}
-	\end{center}
-	\hrule
-\end{fichacatalografica}
-% ---
-
-%%%TODO se não tiver nada pra fazer errata, remover essa seção
-% ---
-% Inserir errata
-% ---
-\begin{errata}
-Elemento opcional da \citeonline[4.2.1.2]{NBR14724:2011}. Exemplo:
-
-\vspace{\onelineskip}
-
-FERRIGNO, C. R. A. \textbf{Tratamento de neoplasias ósseas apendiculares com
-reimplantação de enxerto ósseo autólogo autoclavado associado ao plasma
-rico em plaquetas}: estudo crítico na cirurgia de preservação de membro em
-cães. 2011. 128 f. Tese (Livre-Docência) - Faculdade de Medicina Veterinária e
-Zootecnia, Universidade de São Paulo, São Paulo, 2011.
-
-\begin{table}[htb]
-\center
-\footnotesize
-\begin{tabular}{|p{1.4cm}|p{1cm}|p{3cm}|p{3cm}|}
-  \hline
-   \textbf{Folha} & \textbf{Linha}  & \textbf{Onde se lê}  & \textbf{Leia-se}  \\
-    \hline
-    1 & 10 & auto-conclavo & autoconclavo\\
-   \hline
-\end{tabular}
-\end{table}
-
-\end{errata}
-% ---
-
-%%%TODO remover essa parte para a versão final, e readicionar quando for aprovado
-% ---
 % Inserir folha de aprovação
 % ---
 
@@ -291,7 +210,7 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
     \vspace*{\fill}
    \end{center}
         
-   Trabalho aprovado. \imprimirlocal, XX de dezembro de 2018:
+   Trabalho aprovado. \imprimirlocal, \rule{32pt}{1pt}   de dezembro de 2018:
 
    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
    \assinatura{\textbf{Professor} \\ Convidado 1}
@@ -327,22 +246,7 @@ Zootecnia, Universidade de São Paulo, São Paulo, 2011.
 % Agradecimentos
 % ---
 \begin{agradecimentos}
-Os agradecimentos principais são direcionados à Gerald Weber, Miguel Frasson,
-Leslie H. Watter, Bruno Parente Lima, Flávio de Vasconcellos Corrêa, Otavio Real
-Salvador, Renato Machnievscz\footnote{Os nomes dos integrantes do primeiro
-projeto abn\TeX\ foram extraídos de
-\url{http://codigolivre.org.br/projects/abntex/}} e todos aqueles que
-contribuíram para que a produção de trabalhos acadêmicos conforme
-as normas ABNT com \LaTeX\ fosse possível.
-
-Agradecimentos especiais são direcionados ao Centro de Pesquisa em Arquitetura
-da Informação\footnote{\url{http://www.cpai.unb.br/}} da Universidade de
-Brasília (CPAI), ao grupo de usuários
-\emph{latex-br}\footnote{\url{http://groups.google.com/group/latex-br}} e aos
-novos voluntários do grupo
-\emph{\abnTeX}\footnote{\url{http://groups.google.com/group/abntex2} e
-\url{http://abntex2.googlecode.com/}}~que contribuíram e que ainda
-contribuirão para a evolução do \abnTeX.
+Os agradecimentos principais são direcionados ao Prof. {\imprimirorientador} e ao Prof. Sandrerley Ramos Pires.
 
 \end{agradecimentos}
 % ---
@@ -354,7 +258,7 @@ contribuirão para a evolução do \abnTeX.
     \vspace*{\fill}
 	\begin{flushright}
 		\textit{``A verdade raramente é pura, e nunca é simples. \\
-		Defender cegamente um ponto de vista é papel dos tolos. }
+		(Oscar Wilde - The Importance of Being Earnest)}
 	\end{flushright}
 \end{epigrafe}
 % ---
@@ -368,37 +272,18 @@ contribuirão para a evolução do \abnTeX.
 \begin{resumo}
  Nos últimos anos o consumo de conteúdo virtual aumentou significativamente, entretanto este ainda não está estruturado de maneira preparada para a dimensão prevista pelos projetos de cidades inteligentes em planejamento. A reorganização da internet pelos conceitos da semântica que levará a web ao patamar de Web 3.0 (Web Semântica) está sendo colocada em prática pela Internet das Coisas e por abordagens modernas de processamento de dados, porém a tecnologia necessária para atender as demandas estipuladas ainda se encontra desafiada. Propõe-se, portanto, pesquisa e desenvolvimento de um sistema de mapeamento e gerência de informações pessoais baseado em análise semântica de conteúdo já consumido via extensões de browsers e aplicativos móveis com o objetivo de desenvolver um assistente virtual pessoal de memória e de consumo de conteúdo.
 
-%%%TODO continuar daqui
- \textbf{Palavras-chaves}: latex. abntex. editoração de texto.
+ \textbf{Palavras-chaves}: web 3. web semântica. cidades inteligentes. internet das coisas. gerência de informação pessoal. processamento de linguagens naturais.
 \end{resumo}
 
 % resumo em inglês
 \begin{resumo}[Abstract]
  \begin{otherlanguage*}{english}
-   This is the english abstract.
+   In the latest years, virtual content consumption increased significantly, but that content still isn't well structured enough to handle the order of magnitude predicted by the ongoing smart city projects. The reorganization of the internet through semantic means that will take it to the level of Web 3.0 (Semantic Web) is being put into practice by the Internet of Things and by modern data processing approaches. Nevertheless, the technology needed to satisfy the demands stipulated is still being challenged. We propose, then, research and development of a system to map and manage personal information based on semantic analysis of consumed content through browser extensions and mobile applications with the intent to develop a virtual personal assistant on memory and content consumption.
 
    \vspace{\onelineskip}
  
    \noindent 
-   \textbf{Key-words}: latex. abntex. text editoration.
- \end{otherlanguage*}
-\end{resumo}
-
-% resumo em francês 
-\begin{resumo}[Résumé]
- \begin{otherlanguage*}{french}
-    Il s'agit d'un résumé en français.
- 
-   \textbf{Mots-clés}: latex. abntex. publication de textes.
- \end{otherlanguage*}
-\end{resumo}
-
-% resumo em espanhol
-\begin{resumo}[Resumen]
- \begin{otherlanguage*}{spanish}
-   Este es el resumen en español.
-  
-   \textbf{Palabras clave}: latex. abntex. publicación de textos.
+   \textbf{Key-words}: web 3. semantic web. smart city. internet of things. personal information management. natural language processing.
  \end{otherlanguage*}
 \end{resumo}
 % ---
@@ -423,20 +308,8 @@ contribuirão para a evolução do \abnTeX.
 % inserir lista de abreviaturas e siglas
 % ---
 \begin{siglas}
-  \item[ABNT] Associação Brasileira de Normas Técnicas
-  \item[abnTeX] ABsurdas Normas para TeX
+  \item[IoT] Internet of Things
 \end{siglas}
-% ---
-
-% ---
-% inserir lista de símbolos
-% ---
-\begin{simbolos}
-  \item[$ \Gamma $] Letra grega Gama
-  \item[$ \Lambda $] Lambda
-  \item[$ \zeta $] Letra grega minúscula zeta
-  \item[$ \in $] Pertence
-\end{simbolos}
 % ---
 
 % ---
@@ -455,82 +328,55 @@ contribuirão para a evolução do \abnTeX.
 \textual
 
 % ----------------------------------------------------------
-% Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
+% PARTE
 % ----------------------------------------------------------
-\chapter*[Introdução]{Introdução}
-\addcontentsline{toc}{chapter}{Introdução}
+\part{Introdução}
 % ----------------------------------------------------------
 
-Este documento e seu código-fonte são exemplos de referência de uso da classe
-\textsf{abntex2} e do pacote \textsf{abntex2cite}. O documento 
-exemplifica a elaboração de trabalho acadêmico (tese, dissertação e outros do
-gênero) produzido conforme a ABNT NBR 14724:2011 \emph{Informação e documentação
-- Trabalhos acadêmicos - Apresentação}.
+\chapter{Contexto do problema}
+\section{Processamento natural de linguagens}
+\section{Cidades inteligentes}
+\section{Assistentes virtuais pessoais}
+\section{Privacidade na Internet das Coisas}
 
-A expressão ``Modelo Canônico'' é utilizada para indicar que \abnTeX\ não é
-modelo específico de nenhuma universidade ou instituição, mas que implementa tão
-somente os requisitos das normas da ABNT. Uma lista completa das normas
-observadas pelo \abnTeX\ é apresentada em \citeonline{abntex2classe}.
-
-Sinta-se convidado a participar do projeto \abnTeX! Acesse o site do projeto em
-\url{http://abntex2.googlecode.com/}. Também fique livre para conhecer,
-estudar, alterar e redistribuir o trabalho do \abnTeX, desde que os arquivos
-modificados tenham seus nomes alterados e que os créditos sejam dados aos
-autores originais, nos termos da ``The \LaTeX\ Project Public
-License''\footnote{\url{http://www.latex-project.org/lppl.txt}}.
-
-Encorajamos que sejam realizadas customizações específicas deste exemplo para
-universidades e outras instituições --- como capas, folha de aprovação, etc.
-Porém, recomendamos que ao invés de se alterar diretamente os arquivos do
-\abnTeX, distribua-se arquivos com as respectivas customizações.
-Isso permite que futuras versões do \abnTeX~não se tornem automaticamente
-incompatíveis com as customizações promovidas. Consulte
-\citeonline{abntex2-wiki-como-customizar} par mais informações.
-
-Este documento deve ser utilizado como complemento dos manuais do \abnTeX\ 
-\cite{abntex2classe,abntex2cite,abntex2cite-alf} e da classe \textsf{memoir}
-\cite{memoir}. 
-
-Esperamos, sinceramente, que o \abnTeX\ aprimore a qualidade do trabalho que
-você produzirá, de modo que o principal esforço seja concentrado no principal:
-na contribuição científica.
-
-Equipe \abnTeX 
-
-Lauro César Araujo
+\chapter{Introdução à solução proposta}
+\section{Coleta de dados}
+\section{Processamento de dados}
+\section{Enriquecimento de contexto}
+\section{Aplicação dos dados}
 
 
 % ----------------------------------------------------------
 % PARTE
 % ----------------------------------------------------------
-\part{Preparação da pesquisa}
+\part{Desenvolvimento}
 % ----------------------------------------------------------
 
-% ---
-% Capitulo com exemplos de comandos inseridos de arquivo externo 
-% ---
-\include{abntex2-modelo-include-comandos}
-% ---
+\chapter{Coleta de dados}
+\section{Social vs Individual}
+\section{Mundo digital}
+\section{Mundo analógico}
 
-% ----------------------------------------------------------
-% PARTE
-% ----------------------------------------------------------
-\part{Referenciais teóricos}
-% ----------------------------------------------------------
+\chapter{Processamento de dados}
+\section{Dado útil vs dado bruto}
+\section{Interpretação e extração de informação}
+\subsection{Extração de metadados}
+\subsection{Extração de timestamp}
+\subsection{Extração de coordenadas}
+\subsection{Extração de entidades}
+\subsection{Extração de conhecimento}
 
-% ---
-% Capitulo de revisão de literatura
-% ---
-\chapter{Lorem ipsum dolor sit amet}
-% ---
+\chapter{Enriquecimento de contexto}
+\section{Relação temporal}
+\section{Relação geoespacial}
+\section{Relação de entidades}
+\subsection{Exatidão}
+\subsection{Proximidade}
 
-% ---
-\section{Aliquam vestibulum fringilla lorem}
-% ---
-
-\lipsum[1]
-
-\lipsum[2-3]
+\chapter{Aplicação dos dados}
+\section{Recomendação de conteúdo}
+\section{Assistente de memória}
+\section{Assistente contextual}
 
 % ----------------------------------------------------------
 % PARTE
@@ -538,31 +384,20 @@ Lauro César Araujo
 \part{Resultados}
 % ----------------------------------------------------------
 
-% ---
-% primeiro capitulo de Resultados
-% ---
-\chapter{Lectus lobortis condimentum}
-% ---
+\chapter{Enriquecimento de contexto temporal com relacionamento de entidades}
 
-% ---
-\section{Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-posuere cubilia Curae}
-% ---
+\section{Metodologia}
+\section{Metodologia}
 
-\lipsum[21-22]
+\chapter{Desafios}
+\section{Privacidade}
+\section{Escalabilidade}
 
-% ---
-% segundo capitulo de Resultados
-% ---
-\chapter{Nam sed tellus sit amet lectus urna ullamcorper tristique interdum
-elementum}
-% ---
+\chapter{Possibilidades}
+\section{SOLID Pods}
+\section{Sidewalk Labs}
 
-% ---
-\section{Pellentesque sit amet pede ac sem eleifend consectetuer}
-% ---
-
-\lipsum[24]
+\chapter{Conclusões}
 
 % ----------------------------------------------------------
 % Finaliza a parte no bookmark do PDF
@@ -571,14 +406,6 @@ elementum}
 % ----------------------------------------------------------
 %\phantompart
 
-% ---
-% Conclusão (outro exemplo de capítulo sem numeração e presente no sumário)
-% ---
-\chapter*[Conclusão]{Conclusão}
-\addcontentsline{toc}{chapter}{Conclusão}
-% ---
-
-\lipsum[31-33]
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -589,7 +416,7 @@ elementum}
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-\bibliography{abntex2-modelo-references}
+\bibliography{references}
 
 % ----------------------------------------------------------
 % Glossário
@@ -599,65 +426,6 @@ elementum}
 %
 %\glossary
 
-% ----------------------------------------------------------
-% Apêndices
-% ----------------------------------------------------------
-
-% ---
-% Inicia os apêndices
-% ---
-\begin{apendicesenv}
-
-% Imprime uma página indicando o início dos apêndices
-\partapendices
-
-% ----------------------------------------------------------
-\chapter{Quisque libero justo}
-% ----------------------------------------------------------
-
-\lipsum[50]
-
-% ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-% ----------------------------------------------------------
-\lipsum[55-57]
-
-\end{apendicesenv}
-% ---
-
-
-% ----------------------------------------------------------
-% Anexos
-% ----------------------------------------------------------
-
-% ---
-% Inicia os anexos
-% ---
-\begin{anexosenv}
-
-% Imprime uma página indicando o início dos anexos
-\partanexos
-
-% ---
-\chapter{Morbi ultrices rutrum lorem.}
-% ---
-\lipsum[30]
-
-% ---
-\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-parturient montes nascetur ridiculus mus}
-% ---
-
-\lipsum[31]
-
-% ---
-\chapter{Fusce facilisis lacinia dui}
-% ---
-
-\lipsum[32]
-
-\end{anexosenv}
 
 %---------------------------------------------------------------------
 % INDICE REMISSIVO
