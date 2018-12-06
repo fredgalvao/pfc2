@@ -1,9 +1,20 @@
 \chapter{Processamento de dados}
 
 \section{Dado útil vs dado bruto}
+
+Alguns dos canais de coleta de dados extraem informação bruta de um contexto às vezes muito mais rico e diversificado do que o necessário, e uma pré-seleção e normalização de dados a fim de transformar dado bruto em dado útil é necessária para atingir níveis de eficiência computacional nas camadas posteriores. Como exemplo temos a extração de texto de páginas da web na forma de código fonte HTML puro, sendo que apenas a parte textual principal da página em questão é realmente útil para a extração de metadados que segue. Algumas das ferramentas disponíveis que comporiam um subsistema completo de tratamento e processamento de dados são \cite{ital:jung-andrew}: Apache Tika \cite{apache:tika} para extração de texto e metadados de inúmeros formatos brutos como HTML e PDF, Apache Stanbol \cite{apache:stanbol} para gerenciamento de conteúdo semântico dessas extrações, e Apache OpenNLP \cite{apache:opennlp} para identificação de entidades nomeadas e processamento textual utilizando aprendizado de máquina.
+
+Já os canais de coleta de dados compostos por sensores em automação residencial ou cidades inteligentes - como os de temperatura, geolocalização, umidade relativa do ar, pressão atmosférica, nível de água - ou caracterizados por eventos bem definidos - como evento de consumo de conteúdo (desconsiderando o conteúdo em si), visita a páginas e recursos online, interações com timestamp ou coordenadas bem definidas seja no mundo digital ou no mundo real - raramente apresentam conteúdo bruto que necessite de normalização ou tratamento prévio, pois espera-se que a formalização do modelo de dado já caracteriza o dado útil desde o começo.
+
 \section{Interpretação e extração de informação}
-\subsection{Extração de metadados}
+
+Uma vez que os canais de coleta de dados passaram, quando necessário, por normalização e tratamento a fim de garantir a taxa máxima de utilidade por volume dests dados, ferramentas de extração de informação, entidades, metadados e relacionamentos localizados são então aplicadas sobre cada canal de dado, tendo como objetivo a criação de uma camada final de dados oferecidos desta etapa do sistema para a próxima em formatos já preparados para processamento computacional de larga escala e alta aplicabilidade.
+
 \subsection{Extração de timestamp}
+
+A informação mais relevante e, felizmente, a mais fácil de ser obtida é \textbf{o momento em que cada evento ou coleta de dado ocorreu}. Essa informação é chamada de \textit{timestamp}, e precisa estar presente em todo e qualquer canal de dados de uma cidade inteligente ou sistema de assistência virtual pessoal de memória. Considerando que todo sistema computacional de baixo nível oferece algum método de obtenção de informação do relógio da máquina ou da rede com alta precisão - a definição de Unix Time considera a precisão de \textit{segundos}, a definição de System Time geralmente considera a precisão de \textit{milissegundos}, e vários sistemas modernos oferecem interface de obtenção de tempo com precisão de \textit{nanossegundos} - é confiável dizer que a implementação de timestamp com precisão satisfatória estará disponível em todo sistema de coleta de dados.
+
 \subsection{Extração de coordenadas}
 \subsection{Extração de entidades}
+\subsection{Extração de metadados}
 \subsection{Extração de conhecimento}
