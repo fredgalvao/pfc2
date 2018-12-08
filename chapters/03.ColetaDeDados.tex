@@ -1,20 +1,34 @@
 \chapter{Coleta de dados} \label{c:coleta_de_dados}
 
-Inúmeras fontes de dados podem ser consideradas num modelo completo de cidade inteligente e no contexto de um cidadão moderno que faz uso de todos os dispositivos de integração e automação disponíveis. Essas fontes geralmente produzem conjuntos de dados caracterizados em principalmente duas dimensões: área de impacto e contexto de origem. A área de impacto de um conjunto de dado diz respeito aos elementos influenciadores e influenciados por tais dados, enquanto o contexto de origem caracteriza os elementos geradores dos dados de acordo com seu universo de origem.
+Inúmeras fontes de dados podem ser consideradas num modelo completo de cidade inteligente e no contexto de um cidadão moderno que faz uso de todos os dispositivos de integração e automação disponíveis.
 
-\section{Individual vs Social} \label{s:individual_vs_social}
+Essas fontes geralmente produzem conjuntos de dados caracterizados em principalmente duas dimensões: área de impacto e contexto de origem. A área de impacto de um conjunto de dado diz respeito aos elementos influenciadores e influenciados por tais dados, enquanto o contexto de origem caracteriza os elementos geradores dos dados de acordo com seu universo de origem.
 
-Dispositivos privados ou residenciais quase sempre estarão focando os processos de coleta no usuário proprietário do elemento coletor, que é também dono de toda ou boa parte da informação. Esses dados são classificados como \textit{individuais} e serão, portanto, quase sempre utilizados a fim de fornecer serviços e qualidade de vida pro contexto deste usuário. Isso engloba algumas premissas de privacidade e de propriedade de dados de projetos de cidades inteligentes e de regulação como o GDPR \cite{eu:gdpr} na Europa. A manutenção e aplicação de dados individuais ocorrerá na grande maioria dos casos sob demanda e acordo do próprio usuário, que tem o poder de intervir e interromper diretamente e imediatamente os processos envolvendo tais dados.
+\section{Individual \textit{versus} Social} \label{s:individual_vs_social}
 
-Já os meios de coleta de dados coletivos, geralmente ligados a ambientes compartilhados ou à própria infraestrutura da cidade, são responsáveis pela coleta de dados \textit{sociais} que envolvem o coletivo, tendo às vezes um grupo de indivíduos como fonte de dados anonimizada ao invés de individualmente identificados. Estudos anteriores de engenharia social serão aplicados nessa categoria de dados com mais frequência, pois o comportamento coletivo tem o potencial de, ao mesmo tempo, gerar dados extremamente valiosos e impactar o meio social de maneira negativa. Entende-se que tanto os modelos de cidades inteligentes quanto as configurações de uso de um sistema como esse precisam levar em consideração atributos humanos no processo de representação social no modelo \cite{huso17}.
+Dispositivos privados ou residenciais quase sempre estarão focando os processos de coleta no usuário proprietário do elemento coletor, que é também dono de toda ou boa parte da informação.
 
-\section{Mundo digital vs analógico} \label{s:mundo_digital_vs_analogico}
+Esses dados são classificados como \textit{individuais} e serão, portanto, quase sempre utilizados a fim de fornecer serviços e qualidade de vida pro contexto deste usuário. Isso engloba algumas premissas de privacidade e de propriedade de dados de projetos de cidades inteligentes e de regulação como o GDPR \cite{eu:gdpr} na Europa.
 
-Apesar de toda e qualquer informação que trafega em um sistema assistente virtual e em uma cidade inteligente ser obrigatoriamente digitalizada em algum momento antes de entrar nas etapas de processamento e armazenamento de dados, a origem desses dados pode diferir significativamente. Informações que possuem origem já no mundo digital, como as geradas por interações homem-máquina, são mais facilmente abstraídas e representadas do que as que possuem origem analógica, como as geradas por interações homem-cidade.
+A manutenção e aplicação de dados individuais ocorrerá na grande maioria dos casos sob demanda e acordo do próprio usuário, que tem o poder de intervir e interromper diretamente e imediatamente os processos envolvendo tais dados.
+
+Já os meios de coleta de dados coletivos, geralmente ligados a ambientes compartilhados ou à própria infraestrutura da cidade, são responsáveis pela coleta de dados \textit{sociais} que envolvem o coletivo, tendo às vezes um grupo de indivíduos como fonte de dados anonimizada ao invés de individualmente identificados.
+
+Estudos anteriores de engenharia social serão aplicados nessa categoria de dados com mais frequência, pois o comportamento coletivo tem o potencial de, ao mesmo tempo, gerar dados extremamente valiosos e impactar o meio social de maneira negativa.
+
+Entende-se que tanto os modelos de cidades inteligentes quanto as configurações de uso de um sistema como esse precisam levar em consideração atributos humanos no processo de representação social no modelo \cite{huso17}.
+
+\section{Mundo digital \textit{versus} analógico} \label{s:mundo_digital_vs_analogico}
+
+Apesar de toda e qualquer informação que trafega em um sistema assistente virtual e em uma cidade inteligente ser obrigatoriamente digitalizada em algum momento antes de entrar nas etapas de processamento e armazenamento de dados, a origem desses dados pode diferir significativamente.
+
+Informações que possuem origem já no mundo digital, como as geradas por interações homem-máquina, são mais facilmente abstraídas e representadas do que as que possuem origem analógica, como as geradas por interações homem-cidade.
 
 \section{Fontes de dados consideradas} \label{s:fontes_de_dados_consideradas}
 
-Nesta seção serão descritas algumas fontes de dados que um contexto urbano inserido no contexto maior de uma cidade inteligente, com a classificação de área de impacto e contexto de origem de seus dados, assim como exemplos concretos de eventos e informações delas extraídas. Se os últimos anos provou algo sobre a gama de possibilidades de coleta de dados em projetos de cidades inteligentes, é que a lista de fontes de dados cruciais para o bom funcionamento de um sistema deste porte está em constante e íngreme crescimento \cite{lavaprotocols:smartcity}.
+Nesta seção serão descritas algumas fontes de dados que um contexto urbano inserido no contexto maior de uma cidade inteligente, com a classificação de área de impacto e contexto de origem de seus dados, assim como exemplos concretos de eventos e informações delas extraídas.
+
+Se os últimos anos provaram algo sobre a gama de possibilidades de coleta de dados em projetos de cidades inteligentes, é que a lista de fontes de dados cruciais para o bom funcionamento de um sistema deste porte está em constante e íngreme crescimento \cite{lavaprotocols:smartcity}.
 
 É importante ressaltar, no entanto, que várias fontes de dados transitam entre o mundo digital e analógico e entre impacto individual e social com facilidade, já que alguns desses canais são ambivalentes e podem ser aplicados, em diferentes circunstâncias, para fins diversos ao mesmo tempo. Portanto, a classificação nessas duas dimensões dos exemplos que seguem são apenas um indicador de predominância, e não de exclusividade.
 
@@ -28,7 +42,7 @@ Nesta seção serão descritas algumas fontes de dados que um contexto urbano in
 \textbf{Exemplos}: artigos lidos no Medium, vídeos assistidos no youtube, filmes e séries assistidos na Netflix, músicas ouvidas no Spotify, páginas visitadas no Facebook.
 
 %%------
-\subsection{Sistema operacional desktop}
+\subsection{Sistema operacional \textit{desktop}}
 
 \textbf{Área de impacto}: Individual; \textbf{Contexto de origem}: Digital;
 
@@ -46,21 +60,21 @@ Nesta seção serão descritas algumas fontes de dados que um contexto urbano in
 \textbf{Exemplos}: aplicativos abertos, conectividade, GPS.
 
 %%------
-\subsection{Web 3.0 \textit{PODs}}
+\subsection{Web 3.0 - \textit{Personal Online Data store} (PODs)}
 
 \textbf{Área de impacto}: Individual; \textbf{Contexto de origem}: Digital;
 
 \textbf{Descrição}: Tudo que possa ser consumido e extraído de \textit{PODs} ou de bancos de dados individuais semelhantes. A definição de \textit{PODs} usada aqui é a mesma do projeto \textit{Solid} da Web 3.0 \cite{solid}.
 
 %%------
-\subsection{GPS}
+\subsection{\textit{Global Positioning System} (GPS)}
 
 \textbf{Área de impacto}: Individual; \textbf{Contexto de origem}: Analógico;
 
 \textbf{Descrição}: Pode vir de um smartphone com alta precisão, pode vir de um desktop ou notebook com baixa precisão, pode vir de um GPS automotivo, etc;
 
 %%------
-\subsection{Biofeedback}
+\subsection{\textit{Biofeedback}}
 
 \textbf{Área de impacto}: Individual; \textbf{Contexto de origem}: Analógico;
 
