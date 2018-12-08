@@ -1,6 +1,18 @@
 \chapter{Enriquecimento de contexto}
 
+Esta etapa do processo é o principal alvo deste trabalho. O objetivo é descrever um modelo de enriquecimento de contexto de múltiplos canais de dados pré-processados que consiga fornecer a aplicações de assistência virtual pessoal ou serviços de integração de cidades inteligentes uma camada de conhecimento e inteligência melhor que os resultados obtidos pela utilização desses canais de dados individualmente. O ponto chave é a integração entre as diferentes fontes de dados, a fim de estabelecer relacionamentos entre todos eles, tanto em quantidade quanto em qualidade.
+
+Algumas categorias de relacionamentos se destacam nesta etapa, de acordo com a classificação das camadas de extração e processamento de dados disposta na seção \ref{s:interpretacao_e_extracao_de_informacao}. Em alguns casos, espera-se ser possível estabelecer relacionamentos entre dois ou mais canais de dados em mais de um aspecto, como por exemplo relacionar consumo de conteúdo digital (entidades nomeadas, coordenadas, timestamps) com consumo de bebida (itens consumidos, eventos de cartão de crédito, coordenadas, timestamps) e integração de transporte público (coordenadas, timestamps) a fim de estabelecer relacionamentos cruzados múltiplos tais como:
+\begin{quote}
+    O usuário lê um artigo não-técnico de 3-5 minutos de duração no Medium quando está tomando café expresso a dois quarteirões do trabalho sempre que o ônibus para casa tem previsão de mais que 10 minutos de chegada, mas apenas se este usuário tiver o costume de pagar com cartão de crédito, pois o pagamento em dinheiro lhe custa tempo de manuseio e conferência de troco suficiente para comprometer a leitura ou a chegada ao ponto de ônibus.
+\end{quote}
+
+Diversas possibilidades surgem do estabelecimento de relacionamentos como esses. Sugestão de otimização da rotina do usuário (talvez ele possa adotar um meio de pagamento automatizado usando NFC pelo smartphone que lhe permita leituras mais elaboradas enquanto espera o ônibus e toma um café) ou sugestão de conteúdo apropriado de antemão (seleção de artigos com similaridade de tempo de leitura ou de tema e criação de um catálogo sempre atualizado de fácil acesso sempre que o usuário estiver no mesmo café).
+
 \section{Relação temporal}
+
+O estabelecimento de relação temporal entre diferentes eventos é a área da qual se obtém com mais frequência relevância e resultados imediatos. Estudos de extração de conhecimento e de inferência de relacionamento de contexto a partir de dados do Twitter, por exemplo, atingem resultados satisfatórios levando em consideração a proximidade temporal de eventos \cite{extracting:fromtwitter}. Um peso geralmente é atribuído à proximidade temporal dos eventos a fim de ponderar a força do relacionamento. A base dos estudos de neurociência aplicada em processos cognitivos, que demonstra que a proximidade temporal de eventos sobrepostos tem influência sobre a intensidade dos relacionamentos associados a tais eventos, confirma a importância de definição de escopo temporal bem definido porém variável \cite{Zeithamova2017TemporalPP}. Além do efeito nos processos cognitivos causado pela integração temporal de eventos que se sobrepõem, também os processos humanos de inferência são afetados pela proximidade temporal, reforçando que um sistema que tenha como objetivo a participação natural com a rotina e processos cognitivos e de consumo de conteúdo rotineiro precisa espelhar os mecanismos de inferência e de processos cognitivos de seus usuários.
+
 \section{Relação geoespacial}
 \section{Relação de entidades}
 \subsection{Exatidão}
