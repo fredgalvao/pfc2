@@ -97,22 +97,19 @@
 % ---
 \titulo{Enriquecimento de contexto com análise semântica para assistente virtual pessoal num cenário de Cidades Inteligentes}
 \autor{Frederico Costa Galvão \\ Lucas Costa Sousa Milhomem}
-\local{Brasil}
+\local{Goiânia, Brasil}
 \data{2018}
 \orientador{Marcelo Stehling de Castro}
 \coorientador{Sandrerley Ramos Pires}
 \instituicao{%
-  Universidade Federal de Goiás - UFG
-  \par
-  Escola de Engenharia Elétrica, Mecânica e de Computação
-  \par
-  Bacharelado em Engenharia de Computação}
-\tipotrabalho{Projeto Final 2}
+UNIVERSIDADE FEDERAL DE GOIÁS \par
+ESCOLA DE ENGENHARIA ELÉTRICA, MECÂNICA E DE COMPUTAÇÃO
+  \par}
+ \tipotrabalho{Monografia de Graduação}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
 \preambulo{Monografia apresentada como requisito parcial para a obtenção do título de Bacharel em Engenharia no curso de graduação em Engenharia de Computação da Escola de Engenharia Elétrica, Mecânica e de Computação da Universidade Federal de Goiás.}
 % ---
-
 
 % ---
 % Configurações de aparência do PDF final
@@ -198,34 +195,28 @@
 
 \begin{fichacatalografica}
 	\sffamily
-	\vspace*{\fill}					% Posição vertical
+%	\vspace*{\fill}					% Posição vertical
 	\begin{center}					% Minipage Centralizado
 	\fbox{\begin{minipage}[c][8cm]{13.5cm}		% Largura
 	\small
-	\imprimirautor
+	\imprimirautor / \imprimirtitulo \par
 	%Sobrenome, Nome do autor
 	
-	\hspace{0.5cm} \imprimirtitulo  / \imprimirautor. --
-	\imprimirlocal, \imprimirdata-
-	
-	\hspace{0.5cm} \thelastpage p. : il. (algumas color.) ; 30 cm.\\
-	
-	\hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador\\
-	
-	\hspace{0.5cm}
-	\parbox[t]{\textwidth}{\imprimirtipotrabalho~--~\imprimirinstituicao,
-	\imprimirdata.}\\
-	
-	\hspace{0.5cm}
-		1. Web semântica
-		2. Cidades inteligentes
-		3. Processamento de linguagens naturais
-		I. {\imprimirorientador}
-		II. Universidade Federal de Goiás - UFG
-		III. Escola de Engenharia Elétrica, Mecânica e de Computação
-		IV. \imprimirtitulo		
+	\imprimirtipotrabalho~--~\imprimirinstituicao,\imprimirlocal,\imprimirdata
+	\newline
+	\vspace{0.5cm}
+	\hspace{0.5cm} \thelastpage p. : il. (algumas color.) ; 30 cm.
+	\newline
+    \hspace{0.5cm} \imprimirorientadorRotulo~\imprimirorientador
+	\newline
+		1. Web semântica \par
+		2. Cidades inteligentes \par
+		3. Processamento de linguagens naturais \par
+		I. {\imprimirinstituicao}
+		II. \imprimirtitulo
 	\end{minipage}}
 	\end{center}
+	\newpage
 \end{fichacatalografica}
 % ---
 
@@ -241,12 +232,13 @@
 % \includepdf{folhadeaprovacao_final.pdf}
 %
 \begin{folhadeaprovacao}
-
   \begin{center}
     {\ABNTEXchapterfont\large\imprimirautor}
 
     \vspace*{\fill}\vspace*{\fill}
     \begin{center}
+%    {\par \Large  \textbf{\imprimirinstituicao} \par \par}
+    {\par \Large  \textbf{FOLHA DE APROVAÇÃO} \\ \par}
       \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
     \end{center}
     \vspace*{\fill}
@@ -254,11 +246,11 @@
     \hspace{.45\textwidth}
     \begin{minipage}{.5\textwidth}
         \imprimirpreambulo
-    \end{minipage}%
+    \end{minipage}
     \vspace*{\fill}
    \end{center}
         
-   Trabalho aprovado. Goiânia, \imprimirlocal,  14 de dezembro de 2018:
+   Monografia defendida e aprovada em \imprimirlocal,  14 de dezembro de 2018, pela banca examinadora constituída por:
 
    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
    \assinatura{\textbf{Sandrerley Ramos Pires } \\ Coorientador}
