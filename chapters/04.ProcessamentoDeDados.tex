@@ -10,7 +10,7 @@ Alguns dos canais de coleta de dados extraem informação bruta de um contexto �
 
 Como exemplo tem-se a extração de texto de páginas da web na forma de código fonte HTML puro, sendo que apenas a parte textual principal da página em questão é realmente útil para a extração de metadados que segue.
 
-Algumas das ferramentas disponíveis que comporiam um subsistema completo de tratamento e processamento de dados são \cite{ital:jung-andrew}: Apache Tika \cite{apache:tika} para extração de texto e metadados de inúmeros formatos brutos como HTML e PDF, Apache Stanbol \cite{apache:stanbol} para gerenciamento de conteúdo semântico dessas extrações, e Apache OpenNLP \cite{apache:opennlp} para identificação de entidades nomeadas e processamento textual utilizando aprendizado de máquina.
+Algumas das ferramentas disponíveis que comporiam um subsistema completo de tratamento e processamento de dados são \cite{ital:jung-andrew}: Apache Tika\footnote{\url{https://tika.apache.org/}} para extração de texto e metadados de inúmeros formatos brutos como HTML e PDF, Apache Stanbol\footnote{\url{https://stanbol.apache.org/}} para gerenciamento de conteúdo semântico dessas extrações, e Apache OpenNLP\footnote{\url{https://opennlp.apache.org/}} para identificação de entidades nomeadas e processamento textual utilizando aprendizado de máquina.
 
 Já os canais de coleta de dados, compostos por sensores em automação residencial ou cidades inteligentes - como os de temperatura, geolocalização, umidade relativa do ar, pressão atmosférica, nível de água - ou caracterizados por eventos bem definidos - como evento de consumo de conteúdo (desconsiderando o conteúdo em si), visita a páginas e recursos online, interações com \textit{timestamp} ou coordenadas bem definidas seja no mundo digital ou no mundo real - raramente apresentam conteúdo bruto que necessite de normalização ou tratamento prévio, pois espera-se que a formalização do modelo de dado já caracteriza o dado útil desde o começo.
 
@@ -32,9 +32,9 @@ Considerando que todo sistema computacional de baixo nível oferece algum métod
 
 Se o modelo inicial da fonte de dados ou dos coletores envolvidos não contemplar o aspecto temporal diretamente e imediatamente na coleta dos dados, essa informação perde o valor parcial ou totalmente, pois pode ser impossível inferir ou atribuir um \textit{timestamp} arbitrariamente a um evento de \textit{timestamp} original desconhecido.
 
-Nesta dimensão observa-se o uso de bancos de dados focados em resolver problemas no modelo \textbf{série temporal} \cite{influxdata:explained}, e ferramentas como TimescaleDB \cite{timescaledb} e InfluxDB \cite{influxdb} serão cruciais para resolver de forma escalável o problema de armazenamento e processamento de dados em séries temporais de imensa escala.
+Nesta dimensão observa-se o uso de bancos de dados focados em resolver problemas no modelo \textbf{série temporal}\footnote{\url{https://www.influxdata.com/time-series-database/}}, e ferramentas como TimescaleDB\footnote{\url{https://www.timescale.com/}} e InfluxDB\footnote{\url{https://www.influxdata.com/}} serão cruciais para resolver de forma escalável o problema de armazenamento e processamento de dados em séries temporais de imensa escala.
 
-Unindo a importância à tendência, observa-se que bancos de dados de séries temporais foram os que mais cresceram nos últimos 2 anos, de todas as categorias classificadas pelo portal DB-Engines \cite{dbengines:trends}
+Unindo a importância à tendência, observa-se que bancos de dados de séries temporais foram os que mais cresceram nos últimos 2 anos, de todas as categorias classificadas pelo portal DB-Engines\footnote{\url{https://db-engines.com/en/ranking_categories}}.
 
 \subsection{Extração de coordenadas} \label{ss:extracao_de_coordenadas}
 

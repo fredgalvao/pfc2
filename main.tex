@@ -64,6 +64,8 @@
 \graphicspath{ {./images/} }
 %code highlight
 \usepackage{minted}
+\usepackage[final]{pdfpages}
+\usepackage{afterpage}
 
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
@@ -224,9 +226,56 @@
 		II. \imprimirtitulo
 	\end{minipage}}
 	\end{center}
-	\newpage
 \end{fichacatalografica}
 % ---
+\vspace*{\fill}
+
+\begin{minipage}{.9\textwidth}
+        \textbf{CESSÃO DE DIREITOS}
+	    \vspace{0.5cm}
+	    \\
+        AUTOR: Frederico Costa Galvão; Lucas Costa Sousa Milhomem \\
+        TÍTULO DA MONOGRAFIA: {\imprimirtitulo} \\
+        GRAU / ANO: Bacharel / 2018 \\
+        
+        O autor reserva outros direitos de publicação e nenhuma parte desta monografia pode ser reproduzida sem a autorização por escrito do autor.
+        
+	    \vspace{0.5cm}
+        \begin{center}
+        \begin{tabular}{ c c }
+
+            \begin{minipage}{.45\textwidth}
+            \begin{center}
+                Frederico Costa Galvão
+            \end{center}
+            \footnotesize{Endereço: Rua T-33, Quadra 84, Lote 6-8, Apto 2901, Bloco B-Conquista, Residencial Like Bueno, Setor Bueno, Goiânia - GO.} \\
+            \footnotesize{CEP: 74215-140.} \\
+            \footnotesize{Tel.: +55 62 98131-5720} \\
+            \footnotesize{E-mail: frederico.costa.galvao@gmail.com}
+            \end{minipage}
+
+            &
+
+            \begin{minipage}{.45\textwidth}
+            \begin{center}
+                Lucas Costa Sousa Milhomem
+            \end{center}
+            \footnotesize{Endereço: Rua Dr. João Alves de Castro nº 425, Quadra 20, Lote 06, Setor Criméia Oeste, Goiânia - GO.} \\
+            \footnotesize{CEP: 74563-170.} \\
+            \footnotesize{Tel.: +55 62 98183-2835} \\
+            \footnotesize{E-mail: lucas.script@gmail.com}
+            \end{minipage}
+
+        \end{tabular}
+        \end{center}
+\end{minipage}
+
+
+\newpage
+
+\includepdf{Autorizacao_para_divulgacao_do_Projeto_Final.pdf}
+\afterpage{\null\newpage}
+
 
 % ---
 % Inserir folha de aprovação
@@ -290,16 +339,6 @@
 \end{dedicatoria}
 % ---
 
-%%%TODO redigir agradecimentos com o Lucas
-% ---
-% Agradecimentos
-% ---
-\begin{agradecimentos}
-Os agradecimentos principais são direcionados aos professores  {\imprimirorientador} e Sandrerley Ramos Pires.
-
-\end{agradecimentos}
-% ---
-
 % ---
 % Epígrafe
 % ---
@@ -342,14 +381,6 @@ Os agradecimentos principais são direcionados aos professores  {\imprimirorient
 % ---
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
-\cleardoublepage
-% ---
-
-% ---
-% inserir lista de tabelas
-% ---
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*
 \cleardoublepage
 % ---
 
