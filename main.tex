@@ -59,9 +59,11 @@
 \usepackage{microtype} 			% para melhorias de justificação
 % ---
 		
-%%CUSTOM image paths
+%%CUSTOM-FRED
 %Path relative to the main .tex file 
 \graphicspath{ {./images/} }
+%code highlight
+\usepackage{minted}
 
 % ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
@@ -101,14 +103,16 @@
 % ---
 \titulo{Enriquecimento de contexto com análise semântica para assistente virtual pessoal num cenário de Cidades Inteligentes}
 \autor{Frederico Costa Galvão \\ Lucas Costa Sousa Milhomem}
+
 \local{Goiânia, Brasil}
 \data{2018}
 \orientador{Marcelo Stehling de Castro}
 \coorientador{Sandrerley Ramos Pires}
 \instituicao{%
-UNIVERSIDADE FEDERAL DE GOIÁS \par
-ESCOLA DE ENGENHARIA ELÉTRICA, MECÂNICA E DE COMPUTAÇÃO
-  \par}
+ UNIVERSIDADE FEDERAL DE GOIÁS \par
+ ESCOLA DE ENGENHARIA ELÉTRICA, MECÂNICA E DE COMPUTAÇÃO
+   \par}
+  
  \tipotrabalho{Monografia de Graduação}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
@@ -237,15 +241,18 @@ ESCOLA DE ENGENHARIA ELÉTRICA, MECÂNICA E DE COMPUTAÇÃO
 %
 \begin{folhadeaprovacao}
   \begin{center}
-    {\ABNTEXchapterfont\large\imprimirautor}
+    {\ABNTEXchapterfont\large\imprimirinstituicao}
 
     \vspace*{\fill}\vspace*{\fill}
     \begin{center}
-%    {\par \Large  \textbf{\imprimirinstituicao} \par \par}
-    {\par \Large  \textbf{FOLHA DE APROVAÇÃO} \\ \par}
-      \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
+    {\par \Large \centering \textbf{FOLHA DE APROVAÇÃO}}
+      \newline
+     \\ \ABNTEXchapterfont\bfseries\Large\imprimirtitulo
     \end{center}
     \vspace*{\fill}
+    
+    \imprimirautor
+    \vspace*{\fill}\vspace*{\fill}
     
     \hspace{.45\textwidth}
     \begin{minipage}{.5\textwidth}
@@ -259,8 +266,6 @@ ESCOLA DE ENGENHARIA ELÉTRICA, MECÂNICA E DE COMPUTAÇÃO
    \assinatura{\textbf{\imprimirorientador} \\ Orientador} 
    \assinatura{\textbf{Sandrerley Ramos Pires } \\ Coorientador}
    \assinatura{\textbf{Gustavo Dias de Oliveira} \\  Engenheiro convidado}
-   %\assinatura{\textbf{Professor} \\ Convidado 3}
-   %\assinatura{\textbf{Professor} \\ Convidado 4}
       
    \begin{center}
     \vspace*{0.5cm}
