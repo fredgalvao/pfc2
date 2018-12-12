@@ -1,4 +1,4 @@
-\chapter{Projeto proposto: Enriquecimento de contexto de entidades no tempo}
+\chapter{Projeto proposto: Enriquecimento de contexto de entidades no tempo} \label{c:enriquecimento_proposto}
 
 Tendo agora explorado de maneira relativamente detalhada as diferentes etapas do sistema completo proposto por este trabalho, podemos isolar algumas partes e focar em alguns detalhes de implementação da etapa de enriquecimento de contexto que imaginamos ser cruciais para o alcance de resultados excelentes na modelagem de contexto semântico propriamente dita.
 
@@ -105,7 +105,7 @@ class MD_EntityEventRelationship extends SD_EntityEventRelationship {
     //now mandatory, most of the time with a millisecond precision
     Timestamp timestamp
     //now mandatory, with as much precision as possible
-    Coodinates coordinates
+    Coordinates coordinates
     //optional, freeform metadata that doesn't fit time or place concepts
     HashMap extraMetadata
 
@@ -131,7 +131,7 @@ class MD_ContextQuery {
     Entity entity
 
     Timestamp timestamp
-    Coodinates coordinates
+    Coordinates coordinates
     HashMap extraMetadata
 }
 
