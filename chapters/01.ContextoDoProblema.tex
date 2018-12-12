@@ -1,99 +1,42 @@
 \chapter{Contexto do problema} \label{c:contexto_do_problema}
 
-A seguir, serão abordados conceitos utilizados ao longo do trabalho, que envolvem o processamento natural de linguagens, cidades inteligentes, assistentes virtuais pessoais e a  privacidade na Era da Internet das Coisas.
+A seguir, serão abordados alguns dos conceitos utilizados ao longo do trabalho, necessários para que o trabalho se situe e para que a motivação e desafios deste sejam esclarecidos.
 
 \section{Processamento natural de linguagens} \label{s:processamento_natural_de_linguagens}
 
-Processamento de Linguagem Natural (PLN) consiste no desenvolvimento de modelos computacionais para a realização de tarefas que dependem de informações expressas em alguma língua natural, a pesquisa em PLN está voltada, essencialmente, a três aspectos da comunicação em língua natural:
+O Processamento de Linguagem Natural (PLN) consiste no desenvolvimento de modelos matemáticos e computacionais para processar, extrair e estruturar informações expressas em alguma língua natural. A pesquisa em PLN está voltada, essencialmente, a três aspectos da comunicação \cite{doprocessamento}:
 \begin{itemize}
 \item  Som: fonologia
 \item  Estrutura: morfologia e sintaxe
 \item  Significado: semântica e pragmática
 \end{itemize}
-A \textbf{fonologia} está relacionada ao reconhecimento dos sons que compõem as palavras de uma língua. A \textbf{morfologia} reconhece as palavras em termos das unidades primitivas que a compõem. A \textbf{sintaxe} define a estrutura de uma frase, com base na forma como as palavras se relacionam nessa frase.  A \textbf{semântica} associa significado a uma estrutura sintática, em termos dos significados das palavras que a compõem. A \textbf{pragmática} verifica se o significado associado à uma estrutura sintática é realmente o significado mais apropriado no contexto considerado.
 
-Com uma grande quantidade de páginas, a web se constitui hoje quase todas usando linguagem natural, com isso um agente que deseja adquirir conhecimento tem que entender a ambiguidade e confusão da linguagem humana \cite{inteligencia-artificial}.
+\citeonline{doprocessamento} define as partes internas do estudo de PLN como sendo:
 
-As linguagens naturais não podem ser descritas como um conjunto de sentenças definidas. Com isso se torna melhor definir um modelo de linguagem natural usando probabilidade sobre sentenças em vez de um conjunto definido \cite{inteligencia-artificial}.
+\begin{quote}
+    \say{A \textbf{fonologia} está relacionada ao reconhecimento dos sons que compõem as palavras de uma língua. A \textbf{morfologia} reconhece as palavras em termos das unidades primitivas que a compõem. A \textbf{sintaxe} define a estrutura de uma frase, com base na forma como as palavras se relacionam nessa frase.  A \textbf{semântica} associa significado a uma estrutura sintática, em termos dos significados das palavras que a compõem. A \textbf{pragmática} verifica se o significado associado à uma estrutura sintática é realmente o significado mais apropriado no contexto considerado.}
+\end{quote}
 
-Linguagens naturais são ambíguas, pode-se tomar de exemplo o “Ele viu o banco”, onde pode significar que ele viu uma peça de mobília ou uma instituição financeira. Com isso não se pode falar de um significado e sim de uma probabilidade sobre o significado \cite{inteligencia-artificial}.
-
-O Processamento de Linguagem Natural (PLN) tal como construído por (JUNIOR, 2008), tem duas abordagens principais, que são a baseada em texto e a baseada em diálogo. A abordagem baseada em texto tem como principal foco na busca de documentos e resumo e compreensão de textos(JUNIOR, 2008).A abordagem baseada em diálogo tem crescimento com a interface entre máquinas e humanos(JUNIOR, 2008). 
-
-O Processamento de Linguagem Natural tem como principal a etapa de pré-processamento, onde serão definidas e reconhecidas às sentenças e classificação das palavras a sua função sintática(JUNIOR, 2008).
+Uma enorme quantidade de páginas na web, em sua maioria de conteúdo redigido por seres humanos, faz necessário que sistemas de extração e aquisição de conhecimento possuam conhecimento de linguagens humanas \cite{inteligencia-artificial}.
 
 \section{Cidades inteligentes} \label{s:cidades_inteligentes}
 
-Por volta de 475 a.C., na Grécia, foi definido o primeiro modelo de urbanização propriamente dito, no qual a cidade passou a ser regularmente dividida. Tal formato foi difundido por Hippodamus de Mileto, filósofo e arquiteto considerado por muitos historiadores como o pai do planejamento urbano.
+O conceito de cidades inteligentes não é novo, nem exclusivo do século XX e XXI:
 
-Nessa época, a cidade apresentava um traçado ortogonal, denominado plano hipodâmico (ABIKO \textit{et al.}, 1995). Entre suas teorias, Hippodamus pregava que, em cidades com mais de 10 mil habitantes, deveria haver uma divisão entre classes (artesã, agrícola e guerreira) e o território teria partes com funções definidas. Uma delas seria reservada a propriedades particulares, outra teria domínio público e a terceira seria consagrada aos deuses.
+\begin{itemize}
+    \item Na Roma Antiga, já por volta dos anos 800 a 735 BC, existiam sistemas de escoamento de esgoto e coleta sanitária complexos e extremamente eficientes, que influenciam projetos de arquitetura e infraestrutura até hoje\footnote{\url{https://en.wikipedia.org/wiki/Sanitation_in_ancient_Rome}}.
+    
+    \item Londres possuía, já em 1829, sistemas de transporte público que séculos depois serviriam como modelo de eficiência urbana para diversos outros centros europeus\footnote{\url{https://en.wikipedia.org/wiki/Transport_in_London}}.
+    
+    \item As ruínas de Uruk, na Mesopotâmia, possuíam sistemas matemáticos ricos de contabilidade e controle de equivalência de finanças que dominavam a vida urbana\footnote{\url{https://www.bbc.com/news/business-39870485}}.
+\end{itemize}
 
-Assim, dentro dessas zonas haveria setores residenciais, o porto comercial e o militar, a ágora (local que caracterizava o centro das atividades da polis grega) e os santuários (ABIKO \textit{et al.}, 1995).
-Outro modelo de cidade a ser considerado no histórico da urbanização é o romano. Seu traçado teve origem nos acampamentos militares (GOITIA, 1992 \textit{apud} ABIKO \textit{et al.}, 1995), dando à cidade romana uma forte característica relacionada à defesa, reforçada muitas vezes por muros que circundavam seu território.
-
-Além disso, um fator inserido neste modelo foi o da convivência civil, na forma de uma praça especial que concentrava os equipamentos públicos e o lazer da época, como circos, anfiteatros e termas (HAROUEL, 1990 \textit{apud} ABIKO \textit{et al.}, 1995).
-
-Posteriormente, na Idade Média, as cidades passam a funcionar sob uma nova ordem: o sistema feudal. Nele, tomou força uma sociedade estamental, baseada na obrigação servil e com a presença integral da religião na sociedade, sob a atuação do clero (ARRUDA, 1993 \textit{apud} ABIKO \textit{et al.}, 1995).
-
-A cidade medieval era fortificada e localizada em locais de difícil acesso, provocando o isolamento dos feudos. Devido a
-isso, seu traçado muitas vezes era espontâneo e condicionado pela irregularidade da topografia local, embora o padrão radiocêntrico de ruas secundárias fosse um dos mais comuns (GOITIA, 1992 \textit{apud} ABIKO \textit{et al.}, 1995).
-
-No século XV, com o Renascimento, o urbanismo se direciona à organização geométrica ideal do território, com predominância da regularidade, simetria e de proporções rígidas entre as vias e praças (ABIKO \textit{et al.}, 1995).
-
-Na ocasião, a paisagem urbana adquiriu um formato de tabuleiro e foi fruto do exercício intelectual (GOITIA, 1992 \textit{apud} ABIKO \textit{et al.}, 1995) para ocupação dos grandes espaços vazios com a realização de programas de colonização e urbanização (BENEVOLO, 1993 \textit{apud} ABIKO \textit{et al}., 1995).
-
-Por outro lado, há o surgimento das grandes cidades e as capitais políticas ganham importância diferenciada, concentrando os instrumentos políticos do Estado nacional e extinguindo a cidade soberana (ABIKO \textit{et al.}, 1995).
-
-No século XIX, com a Revolução Industrial, houve um grande incremento populacional. A cidade industrial foi desenvolvida principalmente com a ampliação de bairros ocupados por operários e a ausência de um sistema capaz de controlar de forma eficaz o crescimento urbano. Assim, a cidade tornou-se cada vez mais compactada devido à construção de novos edifícios e o adensamento populacional se intensificou, tornando o congestionamento e a insalubridade fatores marcantes da época (ABIKO \textit{et al.}, 1995).
+A tentativa de classificar as iniciativas atuais como \textbf{cidades inteligentes} é unanimemente vaga\footnote{\url{https://www.citymetric.com/fabric/many-ways-smart-cities-are-really-very-dumb-4384}}, e é mais produtivo dizer que ao invés de produzir \textbf{cidades inteligentes} absolutas, o objetivo dos projetos modernos é de pensar e implementar atividades e fatores que possam tornar uma cidade \textbf{mais inteligente}, fazendo uso de tecnologia e de processamento de dados.
 
 \section{Assistentes virtuais pessoais} \label{s:assistentes_virtuais_pessoais}
 
-Podemos chamar de Assistente Virtual os agentes de interface que são representados através de personagens que tem como foco melhorar a interação entre humanos e computadores.
+Podemos chamar de Assistente Virtual os agentes de interface que são geralmente representados através de personagens que têm como foco melhorar a interação entre humanos e computadores, ou entre humanos e outros humanos através de uma interface assistida por máquina. Estes assistentes, na forma de personagens, são associados com frequência a processos e mecanismos de inteligência artificial movidos em grande parte pelo processamento natural de linguagens, orientados por estímulos externos a fim de responder a uma interação ou exercer uma tarefa \cite{reategui2006agentes}.
 
-Estes personagens são normalmente associados a algum tipo de mecanismo de inteligência artificial que lhes permitem detectar estímulos externos e responder a estes adequadamente. Trata-se do emprego de uma metáfora em que um assistente pessoal colabora com o usuário no mesmo ambiente de trabalho (Maes, 1994).
+\section{Privacidade} \label{s:privacidade_na_internet_das_coisas}
 
-Muitas pesquisas têm investigado o impacto dos assistentes virtuais no desenvolvimento da aprendizagem interativa 1 . Shaw e Johnson (1999) descrevem experimentos com um professor virtual que orienta alunos em atividades interativas online. Craig \textit{et al.} (2002) investigam diferentes efeitos no processo de aprendizagem de alunos submetidos a personagens estáticos e animados.
-
-Sims (2000) apresenta resultados sobre o uso de personagens virtuais no ensino da língua de sinais para crianças com deficiência auditiva. Outros estudos também mostram que a presença da figura humana tem um efeito positivo em experiências interativas com estudantes.
-
-Andre \textit{et al.} (1999) identificaram que estudantes consideram o objeto de estudo menos difícil quando existe a presença de um assistente virtual. O mesmo estudo mostrou que os estudantes prestam mais atenção aos importantes detalhes da página, em função da presença do assistente.
-
-\section{Privacidade na Internet das Coisas} \label{s:privacidade_na_internet_das_coisas}
-
-Temos cerca de dois bilhões de usuários conectados à Internet, se comunicando, navegando na Web, acessando os mais diversos tipos de conteúdo multimídia, jogos, redes sociais e outras aplicações.
-
-Com o crescente incremento das infra-estruturas de redes e popularização em massa da internet de alta velocidade, emerge um avanço relacionado à utilização da internet tornando-a uma plataforma global para deixar máquinas e objetos inteligentes capazes de comunicarem-se de forma autônoma (MIORANDI \textit{et al.}, 2012).
-
-Gao e Bai (2014) destacam que durante a próxima década, a rede inter-existirá como um tecido sem costura de redes clássicas e objetos ligados em rede. O conteúdo e serviços estarão em torno das pessoas, sempre disponível, facilitando a comunicação e abrindo o caminho para novas aplicações, possibilitando novas formas de trabalho, de interação, de entretenimento, fazendo com que um novo padrão de vida seja desenvolvido.
-
-Este novo padrão de vida, torna-se possível através dos avanços das TICs até uma nova concepção definida como Internet of Things - IoT. O termo Internet of Things foi cunhado pela primeira vez em 1999 por Ashton, um dos pioneiros da tecnologia britânica que ajudou a desenvolver o conceito (GUBBI \textit{et al.}, 2013).
-
-A IoT visa estender os benefícios da internet proporcionando uma conectividade constante, desenvolvendo uma capacidade de controle remoto e compartilhamento de dados para os bens no mundo físico (PEOPLES \textit{et al.}, 2013).
-
-A Internet das Coisas - IoT advém do conceito de presença generalizada em torno das pessoas e de uma variedade de coisas ou objetos, através de Radio Frequency IDentification - RFID, sensores, atuadores, gadget como smartphones, tablet, televisores, pulseiras e relógios inteligentes, \textit{etc.}, por meio de esquemas de endereçamento exclusivos que são capazes de interagir uns com os outros e cooperar com os seus vizinhos para alcançar objetivos comuns (ATZORI; IERA; MORABITO, 2010).
-
-Dentro dessa perspectiva, o termo Internet of Things - IoT é amplamente usado para se referir a ambos: a rede global resultante da interligação dos objetos inteligentes; ao conjunto de tecnologias de apoio necessárias para concretizar essa visão; e o conjunto de aplicações e serviços que alavancam tais tecnologias para abrir novas oportunidades de negócios e de mercados (MIORANDI \textit{et al.}, 2012).
-
-A eficácia da IoT reside no alto impacto que ela se dispõe a proporcionar sobre diversos aspectos do cotidiano de vida e comportamento de usuários potenciais (PEOPLES \textit{et al.}, 2013).
-
-Do ponto de vista de um usuário privado, os efeitos mais evidentes da introdução da IoT estão em suas funções assistidas, como em cuidados com a saúde, orientação de aprendizagem e controle doméstico, são apenas alguns exemplos dos campos de aplicação da IoT.
-
-Da mesma forma, a partir da perspectiva dos usuários de negócios, as consequências mais aparentes serão igualmente visíveis em áreas como automação e manufatura industrial, logística, processo de gestão e tomada de decisão, transporte inteligente de pessoas e bens (ATZORI; IERA; MORABITO, 2010).
-
-Com uma variada coleta de dados e informações, para variados fins, no cotidiano das pessoas, seja em ambientes domésticos de usuários privados ou em ambientes profissionais de usuários de negócios, a coleta autônoma dos dados e das informações das pessoas torna a privacidade uma das principais preocupações éticas com relação à Internet das Coisas.
-
-Entendida por Chabridon \textit{et al.} (2014) como uma questão crucial que pode limitar a implantação da visão IoT seja para usuários privados ou para organizações. Chabrindon et al. (2014) e Weber e Weber (2010) ressaltam que a privacidade é fundamental para o controle deste novo ambiente complexo.
-
-A troca de dados invisível e constante entre as coisas e as pessoas, e entre as coisas e outras coisas, irá ocorrer de forma que os proprietários e criadores desses dados não sejam identificados.
-
-A própria escala e capacidade das novas tecnologias vai ampliar este problema. O termo privacidade transmite um grande número de conceitos e ideias. Comumente associa-se privacidade com a noção de um indivíduo que controla o acesso a sua informação pessoal.
-
-Weber e Weber (2010) identificam três áreas relacionadas com a privacidade, sendo elas: o espaço físico, que pode ser compreendido como um escudo contra objetos indesejados ou sinais, neste sentido a privacidade está perto de segurança de infra-estrutura; o poder de tomada de decisão em relação ao fluxo de informações com o objetivo de proteger a liberdade de uma pessoa a fazer escolhas a respeito de seus dados; e o controle de um indivíduo sobre o processamento da informação compreendendo a aquisição, divulgação e uso de informações pessoais.
-
-No entanto, Chabrindon \textit{et al.} (2014) afirmam que preservar a privacidade através do isolamento não é mais uma opção no mundo da informação e da comunicação de hoje. Para um contexto de ambiente inteligente gerado pela Internet das Coisas, onde as aplicações tornassem de fácil usabilidade e as informações são disponibilizadas de maneira muitas vezes imperceptíveis, a privacidade é geralmente percebida pelos usuários como uma expectativa de estar em um estado de proteção sem ter que persegui-lo ativamente.
-
-Nessa linha, Marx e Murky (2001) identificaram quatro níveis de privacidade perceptíveis pelas pessoas, estes níveis são posteriormente destacados por Chabrindon \textit{et al.} (2014) para definir a maneira como as pessoas percebem as violações a sua privacidade, sendo estes níveis nomeados como fronteiras: a \textbf{fronteira natural} impede a sua presença (ou sentimentos ou emoção) de ser percebido através de um dos sentidos humanos, como paredes, portas, cartas seladas, telefone e email representam fronteiras naturais para observação; a \textbf{fronteira da sociedade} envolve expectativas das pessoas para certos papéis sociais (médicos, membros do clero, advogados) profissionais que não vão divulgar informações confidenciais; a \textbf{fronteira espacial ou temporal} que separa a informação dos vários períodos ou aspectos da vida da pessoa; e a \textbf{fronteira dos efeitos efêmeros ou transitórios}, tais fronteiras baseiam-se na ideia de que a interação e comunicação são esquecidas em breve.
-
-Nota-se que a IoT, enquanto inovação tecnológica que envolve questões de privacidade de dados e informações de usuários, ganha espaço nas discussões acaloradas em meios acadêmicos e profissionais.
-
-Assim, com vistas a contribuir para amplificação das discussões este texto visa discutir, de modo conceitual, os mais relevantes elementos que compõem o fenômeno da IoT. Para isso, o escrito divide-se em cinco sessões: esta introdução como primeira etapa; três sessões teóricas que versam sobre a origem da internet das coisas; privacidade e a IoT; e perspectivas legais da privacidade da informação. E, por fim, são feitas as considerações finais na tentativa de fomentar novas propostas de estudo.	
+O portal IoTAgenda define como área de estudo a \textbf{privacidade na internet das coisas}, tal como sendo \say{as considerações especiais necessárias para proteger a informação do usuário de exposição num ambiente de IoT, no qual a quase toda entidade ou objeto físico ou lógico pode ser atribuído um identificador único e a habilidade de comunicação autônoma através da internet ou redes similares} \footnote{\url{https://internetofthingsagenda.techtarget.com/definition/Internet-of-Things-privacy-IoT-privacy}}.
